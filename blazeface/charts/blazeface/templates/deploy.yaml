@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    run: sealos-blazeface
+  name: sealos-blazeface
+spec:
+  replicas: {{ .Values.blazeface.replicas }}
+  selector:
+    matchLabels:
+      run: sealos-blazeface
+  template:
+    metadata:
+      labels:
+        run: sealos-blazeface
+    spec:
+      containers:
+        - image: luanshaotong/blazeface-server:v1.0
+          name: http-server
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+        - image: luanshaotong/blazeface-face:v1.0
+          name: app
+          ports:
+            - containerPort: 8081
+              protocol: TCP

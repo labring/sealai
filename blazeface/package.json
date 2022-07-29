@@ -1,0 +1,19 @@
+{
+    "name": "face_detect",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "@tensorflow-models/blazeface": "^0.0.7",
+        "@tensorflow/tfjs-backend-cpu": "^3.1.0",
+        "@tensorflow/tfjs-backend-webgl": "^3.1.0",
+        "express": "^4.18.1",
+        "fs": "^0.0.1-security",
+        "image-decode": "^1.2.2"
+    },
+    "author": "",
+    "license": "ISC"
+}

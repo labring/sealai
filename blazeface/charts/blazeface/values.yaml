@@ -1,0 +1,3 @@
+blazeface:
+  replicaCount: 1
+  domain: "test.com"

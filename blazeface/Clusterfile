@@ -1,0 +1,5 @@
+FROM scratch
+
+COPY . .
+
+CMD ["helm install blazeface blazeface-1.0.tgz --namespace blazeface --create-namespace"]

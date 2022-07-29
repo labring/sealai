@@ -1,0 +1,7 @@
+apiVersion: v2
+appVersion: 1.3.0
+description: Blazeface is a lightweight model that detects faces in images.
+kubeVersion: '>=1.20.0-0'
+name: sealos-blazeface
+type: application
+version: 1.0
